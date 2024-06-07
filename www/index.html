@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="lib/themes/samatheme.min.css">
+    <link rel="stylesheet" href="lib/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" class="header">
+            <h1>ToDo List App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form>
+                <input type="text" id="task" placeholder="Ajouter une tâche">
+                <div class="btn-container">
+                    <input type="button" value="Ajouter" class="btn btn-add" onclick="ajouterTache()">
+                </div>
+                <div class="btn-container">
+                    <input type="button" value="Réinitialiser" class="btn btn-reset" onclick="reinitialiserTaches()">
+                </div>
+            </form>
+            <h2>En cours</h2>
+            <ul id="enCours" data-role="listview" data-inset="true">
+                <li class="task-item">Tâche 1</li>
+                <li class="task-item">Tâche 2</li>
+                <li class="task-item">Tâche 3</li>
+            </ul>
+            <h2>Terminées</h2>
+            <ul id="terminees" data-role="listview" data-inset="true">
+                <li class="task-item">Tâche 1</li>
+                <li class="task-item">Tâche 2</li>
+                <li class="task-item">Tâche 3</li>
+            </ul>
+        </div>
+        <div data-role="footer" class="footer">
+            <h1>M2 &copy; 2024</h1>
+        </div>
+    </div>
+</body>
+</html>
